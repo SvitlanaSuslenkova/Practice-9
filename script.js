@@ -8,13 +8,14 @@ let arrowback = document.getElementById("arrowback");
 
 buttons.forEach(button=> {
 button.addEventListener("click", function(){
-button.classList.toggle("selected");
+
+if (allselected.length>0) {
+  allselected[0].className=allselected[0].className.replace("selected","rate");
+}
+this.className="selected"
 result = button.innerHTML;
 span.innerHTML = result;
-});
-button.addEventListener("blur", function(){
-button.classList.remove("selected");});
-});
+});})
   
 submit.addEventListener("click", function()  {
 if (result==null) {alert ("Please, choose the rating!");}
