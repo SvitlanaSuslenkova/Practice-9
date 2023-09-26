@@ -70,7 +70,16 @@ p {
     cursor: pointer;
 }
 .selected {
-    background-color: hsl(217, 12%, 63%); color: hsl(0, 0%, 100%);
+    background-color: hsl(217, 12%, 63%); 
+    color: hsl(0, 0%, 100%);
+    font-family:inherit;
+    font-size: 14px;
+    border-radius: 150px;
+    width: 14.8%; 
+    aspect-ratio : 1 / 1; 
+    border: 0;
+    padding: 2%;
+    cursor: pointer;
 }
 .rate:link ,
 .rate:visited{background-color: hsl(217, 12%, 63%); color: hsl(0, 0%, 100%);}
