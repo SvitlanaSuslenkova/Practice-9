@@ -1,4 +1,5 @@
 const buttons = document.querySelectorAll(".rate");
+const allselected = document.getElementsByClassName("selected");
 const span = document.getElementsByTagName("span")[0];
 let result;
 let section1 = document.querySelector(".section1");
